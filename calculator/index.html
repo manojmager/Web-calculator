@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wvalueth=device-wvalueth, initial-scale=1.0">
+    <title>Base Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" class="input" value="0" >
+        <div value="AC" class="row1 three" onclick="clearScreen()" >AC</div>
+        <div value="+/-" class="row1 three"onclick="display('+/-')">+/-</div>
+        <div value="%" class="row1 three"  onclick="display('%')">%</div>
+        <div value="/" class="row1 yellow" onclick="display('/')">/</div>
+        <div value="7" class="row2 digits" onclick="display('7')">7</div>
+        <div value="8" class="row2 digits" onclick="display('8')">8</div>
+        <div value="9" class="row2 digits" onclick="display('9')">9</div>
+        <div value="*" class="row2 yellow" onclick="display('*')">x</div>
+        <div value="4" class="row3 digits" onclick="display('4')">4</div>
+        <div value="5" class="row3 digits" onclick="display('5')">5</div>
+        <div value="6" class="row3 digits" onclick="display('6')">6</div>
+        <div value="-" class="row3 yellow" onclick="display('-')">-</div>
+        <div value="1" class="row4 digits" onclick="display('1')">1</div>
+        <div value="2" class="row4 digits" onclick="display('2')">2</div>
+        <div value="3" class="row4 digits" onclick="display('3')">3</div>
+        <div value="+" class="row4 yellow" onclick="display('+')">+</div>
+        <div value="0" id="zero" class="row51 digits" onclick="display('0')">0</div>
+        <div value="." class="row52 digits" onclick="display('.')">.</div>
+        <div value="=" class="row53 yellow" onclick="calculate()">=</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

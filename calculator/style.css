@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    display: grid;
+    gap: 5px;
+    grid:
+    "input input input input" 1fr
+    ". . . ." 1fr
+    ". . . ." 1fr
+    ". . . ." 1fr
+    ". . . ." 1fr
+    "zero zero . ." 1fr
+    / 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.calculator > div:not(#zero){
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.input{
+    margin: 0;
+    padding: 0;
+    grid-area: input;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: right;
+}
+.digits{
+    background-color: rgb(40, 37, 37) ;
+}
+.three{
+    background-color: gray;
+}
+.yellow{
+    background-color: orange;
+}
+#zero { grid-area: zero; 
+    height: 10vh;
+    width: 23vh;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.calculator > div:active{
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
